@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+  font-family: 'speda';
+  src: url(./Fonts/Speda.ttf);
+  
+}
+
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  background-image: linear-gradient(#00a9a5, #0b5351, #0b5351, #00a9a5);
+}
+
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.header {
+  margin-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header img {
+  margin-top: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 3px #9afc2b solid;
+}
+.header h1 {
+  text-align: center;
+  font-family: 'speda';
+  margin-top: 30px;
+  margin-bottom: -15px;
+  font-size: 26px;
+  color: white;
+}
+
+.bio {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 15px;
+  color: rgb(184, 181, 181);
+  
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+body {
+  width:100%;
+  position: relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: rgb(12, 10, 10);
+  min-height:100vh;
+}
+.container
+{
+  width:600px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.container .bttn {
+  position:relative;
+  width: 200px;
+  height: 55px;
+  margin: 15px;
+}
+
+.container .bttn a
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0px 15px 35px rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+  border-radius: 30px;
+  color: #fff;
+  z-index: 2;
+  font-size: 400;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+  backdrop-filter: blur(15px);
+  
+}
+
+.container .bttn:hover a
+{
+  letter-spacing: 3px;
+}
+
+.container .bttn a::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255,255,255,0.15),
+  transparent);
+  transform: skewX(45deg) translateX(0);
+  transition: 0.5s;
+}
+
+.container .bttn:hover a::before
+{
+  transform: skewX(45deg) translateX(200%);
+}
+.container .bttn::before
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width:30px;
+  height:10px;
+  background: #f00;
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .bttn:hover::before
+{
+  bottom: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.container .bttn::after
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -5px;
+  width:30px;
+  height:10px;
+  background: rgb(10, 235, 21);
+  border-radius: 10px;
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+.container .bttn:hover::after
+{
+  top: 0;
+  height: 50%;
+  width: 80%;
+  border-radius: 30px;
+  transition-delay: 0.5s;
+}
+
+.container .bttn:nth-child(6)::before,
+.container .bttn:nth-child(6)::after
+{
+  background: #1fa5ff;
+  box-shadow: 0 0 5px #1fa5ff,
+  0 0 15px #1fa5ff,
+  0 0 30px #1fa5ff,
+  0 0 60px #1fa5ff;
+}
+
+.container .bttn:nth-child(2)::before,
+.container .bttn:nth-child(2)::after
+{
+  background: #a9ff1e;
+  box-shadow: 0 0 5px #c3ff1e,
+  0 0 15px #fbff1e,
+  0 0 30px #c3ff1e,
+  0 0 60px #d6ff1e;
+}
+
+.container .bttn:nth-child(3)::before,
+.container .bttn:nth-child(3)::after
+{
+  background: #ff5f1f;
+  box-shadow: 0 0 5px #ebd369,
+  0 0 15px #c91258,
+  0 0 30px #e40f33,
+  0 0 60px #ddf863;
+}
+
+.container .bttn:nth-child(4)::before,
+.container .bttn:nth-child(4)::after
+{
+  background: #da0f0f;
+  box-shadow: 0 0 5px #ff0000,
+  0 0 15px #c91212,
+  0 0 30px #bb0d2a,
+  0 0 60px #639ff8;
+}
+
+.container .bttn:nth-child(5)::before,
+.container .bttn:nth-child(5)::after
+{
+  background: #173677;
+  box-shadow: 0 0 5px #173677,
+  0 0 15px #173677,
+  0 0 30px #173677,
+  0 0 60px #173677;
+}
+
+.container .bttn:nth-child(7)::before,
+.container .bttn:nth-child(7)::after
+{
+  background: #00ff40;
+  box-shadow: 0 0 5px #00ff00,
+  0 0 15px #00ff2a,
+  0 0 30px #00ff4c,
+  0 0 60px #00ff62;
+}
+
+.taybat2 {
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 13px;
+  color: rgb(124, 124, 124);
+  margin-top: 75px;
+  margin-bottom: 65px;
+  font-family: speda;
+  
+}
+
+
+
+@media only screen and (max-width: 430px) {
+  .header img {
+    width: 150px;
+    margin-top: 200px;
+  }
+}
