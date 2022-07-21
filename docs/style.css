@@ -15,6 +15,10 @@ body {
 }
 
 
+.bchwk{
+  border-radius="50%"
+}
+
 .container {
   margin-top: 10px;
   margin-bottom: 10px;
